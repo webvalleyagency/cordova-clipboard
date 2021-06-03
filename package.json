@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-facebook-social-share",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Facebook Social Sharing management plugin for Cordova/PhoneGap that supports iOS, Android",
   "cordova": {
     "id": "cordova-plugin-facebook-social-share",
