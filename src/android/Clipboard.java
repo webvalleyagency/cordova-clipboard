@@ -12,7 +12,7 @@ import android.content.ClipboardManager;
 import android.content.ClipData;
 import android.content.ClipDescription;
 
-public class Clipboard extends CordovaPlugin {
+public class FacebookSocialShare extends CordovaPlugin {
 
     private static final String actionCopy = "copy";
     private static final String actionPaste = "paste";

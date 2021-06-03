@@ -1,7 +1,7 @@
-Clipboard
+FacebookSocialShare
 =========
 
-Clipboard management plugin for Cordova/PhoneGap that supports iOS, Android, and Windows Phone 8.
+FacebookSocialShare management plugin for Cordova/PhoneGap that supports iOS, Android, and Windows Phone 8.
 
 ## Usage
 
