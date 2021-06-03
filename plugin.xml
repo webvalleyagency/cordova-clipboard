@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-facebook-social-share"
-    version="1.0.0">
+    version="1.0.2">
 
     <engines>
         <engine name="cordova" version=">=4.0.0" />
@@ -19,28 +19,28 @@
     <license>MIT</license>
 
     <js-module src="www/facebook-social-share.js" name="FacebookSocialShare">
-        <clobbers target="cordova.plugins.clipboard" />
+        <clobbers target="cordova.plugins.facebooksocialshare" />
     </js-module>
 
     <!-- iOS -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="FacebookSocialShare">
-                <param name="ios-package" value="CDVClipboard" />
+                <param name="ios-package" value="CDVFacebookSocialShare" />
             </feature>
         </config-file>
 
-        <header-file src="src/ios/CDVClipboard.h" />
-        <source-file src="src/ios/CDVClipboard.m" />
+        <header-file src="src/ios/CDVFacebookSocialShare.h" />
+        <source-file src="src/ios/CDVFacebookSocialShare.m" />
     </platform>
     
     <!-- Android -->
     <platform name="android">
-        <source-file src="src/android/FacebookSocialShare.java" target-dir="src/com/verso/cordova/clipboard" />
+        <source-file src="src/android/FacebookSocialShare.java" target-dir="src/com/webvalleyagency/cordova/facebooksocialshare" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FacebookSocialShare">
-                <param name="android-package" value="com.verso.cordova.clipboard.FacebookSocialShare" />
+                <param name="android-package" value="com.webvalleyagency.cordova.facebooksocialshare" />
             </feature>
         </config-file>
     </platform>
