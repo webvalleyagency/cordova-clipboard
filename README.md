@@ -1,4 +1,4 @@
-FacebookSocialShare
+Facebook Social Share
 =========
 
 FacebookSocialShare management plugin for Cordova/PhoneGap that supports iOS, Android, and Windows Phone 8.
@@ -6,10 +6,10 @@ FacebookSocialShare management plugin for Cordova/PhoneGap that supports iOS, An
 ## Usage
 
 ```
-cordova plugin add cordova-clipboard
+cordova plugin add cordova-plugin-facebook-social-share
 ```
 
-The plugin creates the object `cordova.plugins.clipboard` with the methods `copy(text, onSuccess, onError)`, `paste(onSuccess, onError)` and `clear(onSuccess, onError)`
+The plugin creates the object `cordova.plugins.facebooksocialshare` with the methods `share(appId, backgroundImage, onSuccess, onError)`
 
 Example:
 
@@ -21,29 +21,11 @@ Example:
 
 	cordova.plugins.clipboard.clear();
 
-## Notes
-
-### All platforms
-
-- The plugin only works with text content.
-
-### Windows Phone
-
-- The Windows Phone platform doesn't allow applications to read the content of the clipboard. Using the `paste` method will return an error.
-
-### Android
-
-- The minimum supported API Level is 11. Make sure that `minSdkVersion` is larger or equal to 11 in `AndroidManifest.xml`.
-
-## Acknowledgements
-
-This plugin was inspired by [ClipboardManagerPlugin](https://github.com/jacob/ClipboardManagerPlugin) (Android) and [ClipboardPlugin](https://github.com/phonegap/phonegap-plugins/tree/master/iPhone/ClipboardPlugin) (iOS).
-
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Verso Solutions LLC
+Copyright (c) 2021 Webvalley s.r.o.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
